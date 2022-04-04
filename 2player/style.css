@@ -1,0 +1,31 @@
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+:root {
+    --width: 400px;
+    --size: 8;
+}
+
+#container {
+    width: var(--width);
+    display: grid;
+    grid-template-columns: repeat(var(--size), 1fr);
+}
+
+.square {
+    width: calc(var(--width) / var(--size));
+    height: calc(var(--width) / var(--size));
+    background-color: rgb(74, 172, 74);
+    border: 0.5px solid black;
+}
+
+.placeable {
+    background-color: rgb(203, 231, 41);
+}
+
+img {
+    width: calc(var(--width) / var(--size));
+}
